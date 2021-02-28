@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=NovaCoin
+Comment=FreakChain P2P Cryptocurrency
+Comment[fr]=FreakChain, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=FreakChain, eşten eşe kriptografik sanal para birimi
+Exec=/usr/bin/FreakChain
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/bitcoin80.xpm
+MimeType=x-scheme-handler/FreakChain;
+Categories=Office;
