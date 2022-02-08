@@ -57,7 +57,7 @@ RUN chmod u+r-wx,g-rwx,o-rwx /root/.FreakChain/FreakChain.conf
 ## Copy folders
 COPY share /work/share
 COPY src /work/src
-
+CMD chmod +x leveldb/build_detect_platform
 RUN cd src && \
     /usr/bin/make -f makefile.unix USE_UPNP=1 USE_IPV6=1 USE_QRCODE=1
 
