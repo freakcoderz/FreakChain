@@ -6,13 +6,12 @@
 
 ## Important Links
 
-  * Block explorer https://freakchain.freakhouse.dev
-  * Website https://freakhouse.dev/freakchain
-  * Paper Wallet https://paperwallet.freakhouse.dev/?currency=freakchain
-  * Twitter https://twitter.com/HouseOftheFreak
-  * Discord channel https://discordapp.com/invite/98eWYj2
-  * Reddit https://www.reddit.com/r/FreakChain/
-  * Telegram https://t.me/freakchain
+  * Block explorer https://freakchain.comingsoon......maybe
+  * Website
+  * Twitter 
+  * Discord channel 
+  * Reddit 
+  * Telegram: fuck no!
 
 ## FreakChain Specifications
 
