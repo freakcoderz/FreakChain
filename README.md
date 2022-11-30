@@ -2,8 +2,6 @@
 
 ### FreakChain 
 
-<img src="https://i.imgur.com/a7dzshC.png">
-
 ## Important Links
 
   * Block explorer https://freakchain.comingsoon......maybe
