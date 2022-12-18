@@ -4,10 +4,10 @@
 
 ## Important Links
 
-  * Block explorer https://freakchain.comingsoon......maybe
+  * Block explorer https://freak.rektfreak.io
   * Website
-  * Twitter 
-  * Discord channel 
+  * Twitter https://twitter.com/FreakChain
+  * Discord channel https://discord.gg/9CwbextN79
   * Reddit 
   * Telegram: fuck no!
 
