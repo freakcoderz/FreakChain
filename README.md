@@ -21,7 +21,7 @@ POW Algo: Scrypt
 POS: 5% APR
 Port: 16555
 Rpcport: 16556
-Max Supply: 1 Billion
+Max Supply: Doesn't exist
 POW Block Reward: 300 FREAK
 POW Last Block: 1 million
 
