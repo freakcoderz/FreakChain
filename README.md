@@ -5,11 +5,11 @@
 ## Important Links
 
   * Block explorer https://freak.rektfreak.io
-  * Website
+  * Website https://rektfreak.io/freakchain
   * Twitter https://twitter.com/FreakChain
   * Discord channel https://discord.gg/9CwbextN79
   * Reddit 
-  * Telegram: fuck no!
+  * Telegram: https://t.me/rektparadise
 
 ## FreakChain Specifications
 
