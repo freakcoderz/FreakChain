@@ -286,25 +286,15 @@ void BitcoinGUI::createActions()
     twitterAction->setToolTip(tr("FreakChain Twitter"));
     discordAction = new QAction(QIcon(":/icons/discord"), tr("Discord"), this);
     discordAction->setToolTip(tr("FreakChain Discord"));
-    youtubeAction = new QAction(QIcon(":/icons/youtube"), tr("Youtube"), this);
-    youtubeAction->setToolTip(tr("FreakChain Youtube"));
     telegramAction = new QAction(QIcon(":/icons/telegram"), tr("Telegram"), this);
     telegramAction->setToolTip(tr("FreakChain Telegram"));
-    redditAction = new QAction(QIcon(":/icons/reddit"), tr("Reddit"), this);
-    redditAction->setToolTip(tr("FreakChain Reddit"));
 
     websiteAction = new QAction(QIcon(":/icons/website"), tr("Website"), this);
     websiteAction->setToolTip(tr("FreakChain Website"));
     blockexplorerAction = new QAction(QIcon(":/icons/blockexplorer"), tr("Block Explorer"), this);
     blockexplorerAction->setToolTip(tr("FreakChain Block Explorer"));
-    paperwalletAction = new QAction(QIcon(":/icons/paperwallet"), tr("Paper Wallet"), this);
-    paperwalletAction->setToolTip(tr("FreakChain Paper Wallet"));
     githubsourceAction = new QAction(QIcon(":/icons/githubsource"), tr("Github Source"), this);
     githubsourceAction->setToolTip(tr("FreakChain Github Source"));
-    whitepaperAction = new QAction(QIcon(":/icons/whitepaper"), tr("White Paper"), this);
-    whitepaperAction->setToolTip(tr("FreakChain White Paper"));
-    roadmapAction = new QAction(QIcon(":/icons/roadmap"), tr("Road Map"), this);
-    roadmapAction->setToolTip(tr("FreakChain Road Map"));
 
     exportAction = new QAction(QIcon(":/icons/export"), tr("&Export..."), this);
     exportAction->setToolTip(tr("Export the data in the current tab to a file"));
@@ -327,15 +317,10 @@ void BitcoinGUI::createActions()
     connect(twitterAction, SIGNAL(triggered()), this, SLOT(twitterActionClicked()));
     connect(discordAction, SIGNAL(triggered()), this, SLOT(discordActionClicked()));
     connect(telegramAction, SIGNAL(triggered()), this, SLOT(telegramActionClicked()));
-    connect(youtubeAction, SIGNAL(triggered()), this, SLOT(youtubeActionClicked()));
-    connect(redditAction, SIGNAL(triggered()), this, SLOT(redditActionClicked()));
 
     connect(websiteAction, SIGNAL(triggered()), this, SLOT(websiteActionClicked()));
     connect(blockexplorerAction, SIGNAL(triggered()), this, SLOT(blockexplorerActionClicked()));
-    connect(paperwalletAction, SIGNAL(triggered()), this, SLOT(paperwalletActionClicked()));
     connect(githubsourceAction, SIGNAL(triggered()), this, SLOT(githubsourceActionClicked()));
-    connect(whitepaperAction, SIGNAL(triggered()), this, SLOT(whitepaperActionClicked()));
-    connect(roadmapAction, SIGNAL(triggered()), this, SLOT(roadmapActionClicked()));
 }
 
 void BitcoinGUI::createMenuBar()
@@ -369,16 +354,11 @@ void BitcoinGUI::createMenuBar()
     socials->addAction(twitterAction);
     socials->addAction(discordAction);
     socials->addAction(telegramAction);
-    socials->addAction(youtubeAction);
-    socials->addAction(redditAction);
 
     QMenu *links = appMenuBar->addMenu(tr("Links"));
     links->addAction(websiteAction);
     links->addAction(blockexplorerAction);
-    links->addAction(paperwalletAction);
     links->addAction(githubsourceAction);
-    links->addAction(whitepaperAction);
-    links->addAction(roadmapAction);
 
     QMenu *help = appMenuBar->addMenu(tr("&Help"));
     help->addAction(openRPCConsoleAction);
@@ -546,9 +526,10 @@ void BitcoinGUI::discordActionClicked()
 {
     QDesktopServices::openUrl(QUrl("https://discord.gg/9CwbextN79"));
 }
-void BitcoinGUI::redditActionClicked()
+
+void BitcoinGUI::telegramActionClicked()
 {
-    QDesktopServices::openUrl(QUrl("https://www.reddit.com/r/FreakChain/"));
+    QDesktopServices::openUrl(QUrl("https://t.me/rektparadise"));
 }
 
 void BitcoinGUI::websiteActionClicked()
@@ -561,24 +542,9 @@ void BitcoinGUI::blockexplorerActionClicked()
     QDesktopServices::openUrl(QUrl("https://freak.rektfreak.io"));
 }
 
-void BitcoinGUI::paperwalletActionClicked()
-{
-    QDesktopServices::openUrl(QUrl("https://paperwallet.rektfreak.io/?currency=freakchain"));
-}
-
 void BitcoinGUI::githubsourceActionClicked()
 {
     QDesktopServices::openUrl(QUrl("https://github.com/freakcoderz/freakchain"));
-}
-
-void BitcoinGUI::whitepaperActionClicked()
-{
-    QDesktopServices::openUrl(QUrl("https://rektfreak.io/FreakChain/whitepaper.pdf"));
-}
-
-void BitcoinGUI::roadmapActionClicked()
-{
-    QDesktopServices::openUrl(QUrl("https://rektfreak.io/FreakChain/roadmap.pdf"));
 }
 
 void BitcoinGUI::setNumConnections(int count)
