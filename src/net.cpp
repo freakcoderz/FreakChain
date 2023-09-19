@@ -62,7 +62,7 @@ CAddrMan addrman;
 vector<CNode *> vNodes;
 CCriticalSection cs_vNodes;
 map<CInv, CDataStream> mapRelay;
-deque<pair<int64_t, CInv>> vRelayExpiration;
+deque<pair<int64_t, CInv> > vRelayExpiration;
 CCriticalSection cs_mapRelay;
 map<CInv, int64_t> mapAlreadyAskedFor;
 
@@ -1472,7 +1472,7 @@ void ThreadOpenConnections2(void *parg)
         // Only connect out to one peer per network group (/16 for IPv4).
         // Do this here so we don't have to critsect vNodes inside mapAddresses critsect.
         int nOutbound = 0;
-        set<vector<unsigned char>> setConnected;
+        set<vector<unsigned char> > setConnected;
         {
             LOCK(cs_vNodes);
             BOOST_FOREACH (CNode *pnode, vNodes)
@@ -1573,7 +1573,7 @@ void ThreadOpenAddedConnections2(void *parg)
         return;
     }
 
-    vector<vector<CService>> vservAddressesToAdd(0);
+    vector<vector<CService> > vservAddressesToAdd(0);
     BOOST_FOREACH (string &strAddNode, mapMultiArgs["-addnode"])
     {
         vector<CService> vservNode(0);
@@ -1589,13 +1589,13 @@ void ThreadOpenAddedConnections2(void *parg)
     }
     while (true)
     {
-        vector<vector<CService>> vservConnectAddresses = vservAddressesToAdd;
+        vector<vector<CService> > vservConnectAddresses = vservAddressesToAdd;
         // Attempt to connect to each IP for each addnode entry until at least one is successful per addnode entry
         // (keeping in mind that addnode entries can have many IPs if fNameLookup)
         {
             LOCK(cs_vNodes);
             BOOST_FOREACH (CNode *pnode, vNodes)
-                for (vector<vector<CService>>::iterator it = vservConnectAddresses.begin(); it != vservConnectAddresses.end(); it++)
+                for (vector<vector<CService> >::iterator it = vservConnectAddresses.begin(); it != vservConnectAddresses.end(); it++)
                     BOOST_FOREACH (CService &addrNode, *(it))
                         if (pnode->addr == addrNode)
                         {
