@@ -6,7 +6,7 @@
 
   * Block explorer https://freak.rektfreak.io
   * Website https://rektfreak.io/freakchain
-  * Twitter https://twitter.com/FreakChain
+  * Twitter No longer using this service
   * Discord channel https://discord.gg/9CwbextN79
   * Reddit 
   * Telegram: https://t.me/rektparadise
